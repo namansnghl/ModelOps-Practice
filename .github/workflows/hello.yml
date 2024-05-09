@@ -1,0 +1,15 @@
+name: helloworld
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Job is triggered
+        run: echo "You triggered the helloworld job"
+
+      - name: printing Hello
+        run: echo "WELLO HORLD"
+      
