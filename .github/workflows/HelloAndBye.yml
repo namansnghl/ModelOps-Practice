@@ -1,9 +1,7 @@
-name: helloworld
-
 on: workflow_dispatch
 
 jobs:
-  build:
+  Say-Hi:
     runs-on: ubuntu-latest
 
     steps:
@@ -13,3 +11,11 @@ jobs:
       - name: printing Hello
         run: echo "WELLO HORLD"
       
+  Say-Bye:
+      runs-on: ubuntu-latest
+  
+      steps:
+        - name: Save text
+          run: echo "Bye" > bye.txt
+        - name: Ba-Bye
+          run: cat bye.txt
